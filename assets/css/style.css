@@ -1,0 +1,131 @@
+@import url(_variaveis.css);
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+section>div {
+    flex-basis: 1;
+    width: 30%;
+}
+
+img { 
+    display: block;
+    margin-left: auto;
+    width: 360px;
+    height: 600px;
+    border-top-left-radius: 0.525rem;
+    border-bottom-left-radius: 0.525rem;
+}
+
+
+.card__info {
+    padding: 3rem;
+    border-top-right-radius: 0.525rem;
+    border-bottom-right-radius: 0.525rem;
+    background-color: var(--white);
+    box-sizing: border-box;
+}
+
+.info__type {
+    color: var(--dark-grayish-blue);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: var(--font-principal);
+}
+
+.info__title {
+    font-weight: extrabold;
+    font-family: var(--font-secundaria);
+    font-size: 1.88rem;
+}
+
+.info__desc {
+    font-size: 1.225rem;
+    color: var(--dark-grayish-blue);
+    font-weight: 300;
+    font-family: var(--font-principal);
+}
+
+.info__price {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.newPrice {
+    font-size: 1.88rem;
+    color: var(--dark-cyan);
+    font-family: var(--font-secundaria);
+}
+
+.oldPrice {
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+    font-size: 1.225rem;
+    font-family: var(--font-principal);
+}
+
+.info__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-cyan);
+    margin-top: 1.3rem;
+    padding: 1rem;
+    color: var(--white);
+    font-weight: bold;
+    gap: 0.2rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    font-family: var(--font-principal);
+}
+
+.info__button:hover {
+ background-color: var(--very-dark-blue) ;
+}
+
+@media screen and (max-width:500px) {
+    body {
+        height: auto;
+    }
+
+    section {
+        display: block;
+        margin: 1rem;
+    }
+
+
+    section>div,
+    .card__info {
+        width: 100%;
+    }
+
+    .card__info {
+        padding: 1rem;
+    }
+
+    .info__type {
+        font-size: 35px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+}
